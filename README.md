@@ -7,7 +7,7 @@ Deep Multi-View Subspace Clustering with Anchor Graph is a paper accepted by IJC
 - [Project Description](#project-description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
+- [Citation](#license)
 
 ## Project Description
 We propose a novel deep self-supervised model for
