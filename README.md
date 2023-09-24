@@ -26,8 +26,8 @@ pip install -r requirements.txt
 To train the fully connected layer  model using the specified arguments, you can run the following command:
 
 ```bash
-python train.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5 --noise 0
-
+python train.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5 
+```
  
  Training a model with convolutional layers is the same as training a model with fully connected layers.
  
