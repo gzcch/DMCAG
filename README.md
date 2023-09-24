@@ -41,11 +41,11 @@ python train.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5
  
 
 ## Citation
+
 @inproceedings{cui2023deep,
   title={Deep Multi-View Subspace Clustering with Anchor Graph},
   author={Cui, Chenhang and Ren, Yazhou and Pu, Jingyu and Pu, Xiaorong and He, Lifang},
   booktitle={Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI)},
   year={2023}
 }
-
  
