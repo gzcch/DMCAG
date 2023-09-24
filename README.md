@@ -1,5 +1,5 @@
 # Deep Multi-View Subspace Clustering with Anchor Graph
-Deep Multi-View Subspace Clustering with Anchor Graph is a paper accepted by IJCAI2023. 
+Deep Multi-View Subspace Clustering with Anchor Graph (DMCAG) is a paper accepted by IJCAI2023. 
  
 
 ## Table of Contents
