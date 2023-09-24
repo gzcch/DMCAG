@@ -41,6 +41,7 @@ python train.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5
  
 
 ## Citation
+If you're using DMCAG in your research or applications, please cite using this BibTeX:
 ```bibtex
 @inproceedings{cui2023deep,
   title={Deep Multi-View Subspace Clustering with Anchor Graph},
