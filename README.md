@@ -28,7 +28,11 @@ To train the fully connected layer  model using the specified arguments, you can
 ```bash
 python train.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5 
 ```
+ You will get the clustering results as follows:
  
+ ```bash
+ Acc 0.8564, nmi 0.7321, ari 0.6459
+ ```
  Training a model with convolutional layers is the same as training a model with fully connected layers.
  
 
