@@ -634,18 +634,18 @@ if __name__ == "__main__":
     parser.add_argument('--arch', type=int, default=50)
     parser.add_argument('--gamma', type=int, default=5)
 
-    parser.add_argument('--update_interval', default=1000, type=int)
-    parser.add_argument('--tol', default=0.0002, type=float)
-    parser.add_argument('--AR', default=0.95, type=float)
+    # parser.add_argument('--update_interval', default=1000, type=int)
+    # parser.add_argument('--tol', default=0.0002, type=float)
+    # parser.add_argument('--AR', default=0.95, type=float)
     args = parser.parse_args()
-    args.cuda = torch.cuda.is_available()
-    print("use cuda: {}".format(args.cuda))
-    device = torch.device("cuda" if args.cuda else "cpu")
+    # args.cuda =
+    # print("use cuda: {}".format(args.cuda))
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     args.dataset = 'HW'
     args.method = 'HW'
-    args.noise=0
-    args.arch=50
-    args.gamma=1
+    args.noise= 0
+    args.arch= 50
+    args.gamma= 1
 
 
     if args.dataset == 'BDGP':
