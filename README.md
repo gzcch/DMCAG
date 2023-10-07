@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 
 # Prepare your dataset
-The dataset would be a single .mat format in a structure as the following:
+The dataset would be a single .mat format file in a structure as the following:
 ```
 dataset.mat
 ├── Y    1 * n
