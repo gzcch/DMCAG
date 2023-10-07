@@ -34,8 +34,7 @@ dataset.mat
 ├── X2   n * d_2
 ...   
 ```
-Then place the file inside a folder named "data". 
-Then you can set up your dataset as follows in training file：
+Then place the file inside a folder named "data" and set up your dataset as follows in training file：
 ```
     if args.dataset ==  dataset_name:
         args.n_input = [d_1, ...]
