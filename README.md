@@ -23,11 +23,37 @@ pip install -r requirements.txt
 
 ## Usage
 
+
+
+# Prepare your dataset
+The dataset would be a single .mat format in a structure as the following:
+```
+dataset.mat
+├── Y    1 * n
+├── X1   n * d_1
+├── X2   n * d_2
+...   
+```
+Then you can set up your dataset as follows in train.py：
+```
+    if args.dataset ==  dataset_name:
+        args.n_input = [d_1, ...]
+        args.viewNumber =  v
+        args.instanceNumber = n
+        args.batch_size =  x
+        args.n_clusters =  k
+        args.arch= p
+        args.gamma= q
+        args.save_path = path/to/save/parameters
+```
+
+
 To train the fully connected layer  model using the specified arguments, you can run the following command:
 
 ```bash
-python train.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5 
+python train.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5  --dataset  dataset_name
 ```
+
  You will get the clustering results as follows:
  
  ```bash
