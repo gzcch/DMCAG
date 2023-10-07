@@ -19,6 +19,7 @@ import cvxopt
 from sklearn import preprocessing
 import warnings
 from time import time
+import tqdm
 warnings.filterwarnings('ignore')
 min_max_scaler = preprocessing.MinMaxScaler()
 normalize = preprocessing.Normalizer()
@@ -325,7 +326,8 @@ def pretrain_aes():
     dataLoader = DataLoader(dataset, batch_size=args.batch_size, shuffle=False)
 
     optimizer = Adam(model.parameters(), lr=args.lr)
-    for epoch in range(1000):
+    print('Start Pretraining.')
+    for epoch in tqdm.tqdm(range(1000)):
         for batch_idx, (x, _, _) in enumerate(dataLoader):
             loss = 0.
             for viewIndex in range(viewNumber):
@@ -501,7 +503,9 @@ def fineTuning():
 
     loss_function = nn.KLDivLoss(reduction='mean')
 
-    for epoch in range(1000):
+
+    print('Start Self-supervised Learning.')
+    for epoch in tqdm.tqdm(range(1000)):
         qlist=list()
 
         for batch_idx, (x, y, idx) in enumerate(dataLoader):
@@ -559,8 +563,8 @@ def fineTuning():
                   ',kl_loss{:.4f}'.format(kl_loss))
 
     kmeans_arch = KMeans(n_clusters=args.arch, n_init=100)
-
-    for epoch in range(100):
+    print('Start Contrastive Learning.')
+    for epoch in tqdm.tqdm(range(100)):
         for batch_idx, (x, _, _) in enumerate(dataLoader):
             loss = 0.
             for viewIndex in range(args.viewNumber):
