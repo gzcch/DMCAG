@@ -34,7 +34,7 @@ dataset.mat
 ├── X2   n * d_2
 ...   
 ```
-Then you can set up your dataset as follows in train.py：
+Then you can set up your dataset as follows in training file：
 ```
     if args.dataset ==  dataset_name:
         args.n_input = [d_1, ...]
@@ -51,7 +51,7 @@ Then you can set up your dataset as follows in train.py：
 To train the fully connected layer  model using the specified arguments, you can run the following command:
 
 ```bash
-python train.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5  --dataset  dataset_name
+python train_fc.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5  --dataset  dataset_name
 ```
 
  You will get the clustering results as follows:
