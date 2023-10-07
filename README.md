@@ -42,7 +42,7 @@ Then place the file inside a folder named "data" and set up your dataset as foll
         args.instanceNumber = n
         args.batch_size =  x
         args.n_clusters =  k
-        args.arch= p
+        args.arch= num of anchors
         args.gamma= q
         args.save_path = path/to/save/parameters
 ```
@@ -51,7 +51,7 @@ Then place the file inside a folder named "data" and set up your dataset as foll
 To train the fully connected layer  model using the specified arguments, you can run the following command:
 
 ```bash
-python train_fc.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5  --dataset  dataset_name
+python train_fc.py --lr 0.001 --n_z 10  --arch 50 --gamma 5  --dataset  dataset_name
 ```
 
  You will get the clustering results as follows:
