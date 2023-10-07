@@ -68,11 +68,22 @@ python train_fc.py --lr 0.001 --n_z 10 --dataset BDGP --arch 50 --gamma 5  --dat
 
 ## Citation
 If you're using DMCAG in your research or applications, please cite using this BibTeX:
+<!--
 ```bibtex
 @inproceedings{cui2023deep,
   title={Deep Multi-View Subspace Clustering with Anchor Graph},
   author={Cui, Chenhang and Ren, Yazhou and Pu, Jingyu and Pu, Xiaorong and He, Lifang},
   booktitle={Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI)},
+  year={2023}
+}
+```
+-->
+
+```bibtex
+@article{cui2023deep,
+  title={Deep Multi-View Subspace Clustering with Anchor Graph},
+  author={Cui, Chenhang and Ren, Yazhou and Pu, Jingyu and Pu, Xiaorong and He, Lifang},
+  journal={arXiv preprint arXiv:2305.06939},
   year={2023}
 }
 ```
