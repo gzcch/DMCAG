@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 
 
-# Prepare your dataset
+### Prepare your dataset
 The dataset would be a single .mat format file in a structure as the following:
 ```
 dataset.mat
@@ -47,7 +47,7 @@ Then place the file inside a folder named "data" and set up your dataset as foll
         args.save_path = path/to/save/parameters
 ```
 
-
+### Train the model
 To train the fully connected layer  model using the specified arguments, you can run the following command:
 
 ```bash
