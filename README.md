@@ -5,8 +5,10 @@
 <div align="center">
     <a href="https://arxiv.org/pdf/2305.06939.pdf"><img src="Paper-Arxiv-orange.svg" ></a>
 </div>
-
-Deep Multi-View Subspace Clustering with Anchor Graph (DMCAG) is a paper accepted by IJCAI2023. 
+## News
+*  [10.10] Our code is organized and released!
+* [5.11] Our paper is online now: https://arxiv.org/pdf/2305.06939.pdf.
+*  Deep Multi-View Subspace Clustering with Anchor Graph (DMCAG) was accepted by IJCAI2023. 
 ## Table of Contents
 
 - [Project Description](#project-description)
